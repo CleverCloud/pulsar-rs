@@ -532,6 +532,10 @@ pub(crate) mod messages {
                     producer_id,
                     request_id,
                     producer_name,
+                    schema: Some(proto::Schema {
+                      type_: proto::schema::Type::String as i32,
+                      ..Default::default()
+                    }),
                     ..Default::default()
                 }),
                 ..Default::default()
